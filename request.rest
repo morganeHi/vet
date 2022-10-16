@@ -1,0 +1,103 @@
+GET http://localhost:3000/owners
+
+###
+
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/1
+
+###
+
+GET http://localhost:3000/pets/1
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email":"pcastrec@aol.com",
+    "password": "unmotdepassehasher",
+    "own_id": 1
+}
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email":"jeanpoulidor@aol.com",
+    "password": "unautremotdepassehasher",
+    "own_id": 2
+}
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email":"michelou@aol.com",
+    "password": "unautremotdepassehasher",
+    "own_id": 3
+}
+
+###
+POST http://localhost:3000/types
+Content-Type: application/json
+
+{
+    "name": "Felin"
+}
+###
+POST http://localhost:3000/types
+Content-Type: application/json
+
+{
+    "name": "Canin"
+}
+###
+POST http://localhost:3000/types
+Content-Type: application/json
+
+{
+    "name": "Bovin"
+}
+###
+POST http://localhost:3000/types
+Content-Type: application/json
+
+{
+    "name": "Monotrèmes"
+}
+###
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+    "name": "Lorni",
+    "birthdate": "2018-03-26",
+    "type_id": "4",
+    "own_id": "1"
+}
+###
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+    "name": "Abmis",
+    "birthdate": "2010-05-06",
+    "type_id": "1",
+    "own_id": "1"
+}
+###
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+    "name": "Woof",
+    "birthdate": "2020-11-11",
+    "type_id": "2",
+    "own_id": "3"
+}
